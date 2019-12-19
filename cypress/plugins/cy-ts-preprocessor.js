@@ -13,7 +13,11 @@ const webpackOptions = {
           {
             loader: 'ts-loader'
           }
-        ]
+        ],
+        options: {
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: ['@babel/plugin-proposal-class-properties']
+        }
       }
     ]
   }
@@ -21,6 +25,7 @@ const webpackOptions = {
 
 const options = {
   webpackOptions
+  watchOptions: {}
 }
 
 module.exports = wp(options)

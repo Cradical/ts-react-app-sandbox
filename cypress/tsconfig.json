@@ -4,7 +4,7 @@
     "baseUrl": "../node_modules",
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress"]
+    "types": ["cypress", "overrides.d.ts"]
   },
   "extends": "../tsconfig.json",
   "include": ["../node_modules/cypress", "*/*.ts"]
